@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container chính */
+.cv-container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Cột trái */
+.cv-left {
+  width: 35%;
+  background: #00416a;   /* nền xám trắng */
+    /* Màu nền xám trắng giúp phần cột trái nổi bật nhẹ, tạo cảm giác dịu mắt và phân biệt với cột phải */
+  color: #000000;           /* chữ tối */
+  padding: 25px 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile .avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; /* ảnh tròn */
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+.avatar {
+  border: 3px solid #ffffff;
+}
+.profile h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #000; /* tên rõ hơn */
+}
+
+.profile .job-title {
+  font-size: 13px;
+  font-style: italic;
+  color: #000000;
+}
+
+/* Section trái */
+.cv-left .section {
+  margin-bottom: 20px;
+}
+
+.cv-left .section h3 {
+  font-size: 13px;
+  background: #8e8e8e; /* nền nhạt */
+  padding: 6px 8px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-left: 3px solid #ffffff; /* nhấn xanh */
+  color: #000;
+}
+
+.cv-left p,
+.cv-left li {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.cv-left ul {
+  list-style: none;
+}
+
+/* Cột phải */
+.cv-right {
+  width: 65%;
+  padding: 25px 25px;
+}
+
+.cv-right .section {
+  margin-bottom: 28px;
+}
+
+.cv-right .section h3 {
+  font-size: 13px;
+  background: #1f1f1f;   /* đậm để tạo sự tương phản */
+  color: #fff;
+  padding: 6px 8px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-left: 3px solid #007bff;
+}
+
+.cv-right p,
+.cv-right li {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  color: #333333;
+}
+
+.cv-right ul {
+  margin-left: 18px;
+  list-style-type: disc;
+}
+
+/* Nhấn mạnh chữ */
+.section strong {
+  color: #000;
+}
